@@ -1,7 +1,7 @@
 const app = document.getElementById('app')
 
 async function getJokes() {
-  const res = await fetch("http://localhost:1234/games")
+  const res = await fetch("https://w4project.onrender.com/games")
   const jokes = await res.json()
   console.log(jokes)
   displayJokes(jokes);
